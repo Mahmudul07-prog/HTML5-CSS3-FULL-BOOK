@@ -1,0 +1,324 @@
+<!-- Topics
+1. Headings
+2. Paragraph
+3. Hyperlinks
+4. External Anchors
+5. Internal Anchors
+6. Download Links
+7. Image Maps
+8. Responsive Pictures
+9. Unordered List
+10.Progress Bar
+11.meter
+12.code.pre
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project_1286160</title>
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="Icon" type="image/x-icon" href="image/international-delivery.png" />
+    <style>
+      /* Basic style for better visual clarity*/
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        text-align: center;
+      margin-bottom: 25px;
+      }
+
+      img {
+      display: block;
+      margin: 20px auto;
+      max-width: 50%;
+      height: auto;
+    }
+
+    nav img {
+      cursor: pointer;
+    }
+
+      section {
+      max-width: 850px;
+      margin: 25px;
+    }
+
+      table {
+      text-align: center;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #ebfff0;
+    }
+
+    th,
+    td {
+        border: 1px solid #555;
+        padding: 14px;
+    }
+
+    th {
+      background-color: #066909;
+      color: rgb(253, 252, 252);
+    }
+
+    .weekday {
+      background-color: #b4b4b4;
+    }
+
+    .weekend {
+      background-color: #af0a07;
+    }
+
+    td:hover {
+        background-color: white;
+    }
+
+
+    caption {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    #iframe {
+      width: 900px;
+      height: 500px;
+      border: none;
+    }
+    </style>
+  </head>
+  <body>
+        <h1
+        style="
+            background-color: rgb(139, 5, 156);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        "
+        >
+        Chapter 02
+        </h1>
+        <h1>Title 1</h1>
+        <h2>Title 2</h2>
+        <h3>Title 3</h3>
+        <h4>Title 4</h4>
+        <h5>Title 5</h5>
+        <h6>Title 6</h6>
+        <p>Showing Example of the Paragraph...</p>
+
+        <h1>Testing External Anchors</h1>
+        <a href="/Project Info.html" target="_blank">Contact Us</a>
+        <a href="/login/website">Click to Enrole</a>
+
+        <h1>Welcome</h1>
+        <a href="https://www.facebook.com/login/">Go to My Fb Page</a>
+
+        <h2 class="lion">My Lion</h2>
+        <img src="image/lion.jpg" alt="This is a lion" height="100" />
+
+        <a href="image/lion.jpg" download="lion">Download Image</a>
+
+        <header>
+        <h1>Welcome To My website</h1>
+        <!-- Navigation bar with clicakble areas -->
+         <nav>
+            <img src="image/Windows.jpg" alt="windows Logo" usemap="#nav-map" width="160" height="75" >
+            <map name="nav-map">
+                <area shape="rect" coords="20,20,80,60" href="#Youtube" alt="Go to Food Section">
+            </map>
+         </nav>
+        </header>
+
+        <!-- Content sections -->
+
+        <section class="food">
+            <h2>My Youtube Channel</h2>
+            <img src="image/youtube..jpg" alt="This is a delicious Food">
+            <p>Here is my youtube channel. please visit my chennel.</p>
+        </section>
+
+        <p>
+        <b>Resize </b> the browser window to see different images based on the
+        screen width.
+        </p>
+        <picture>
+        <!-- Images for different screen sizes -->
+            <source media="(min-width: 500px)" srcset="image/twitter.jpg">
+            <source media="(min-width: 500px)" srcset="image/Windows.jpg">
+        <!-- Fallback image if no conditions are met -->
+         <img src="image/lion.jpg" alt="A responsive image example">
+        </picture>
+
+        <ol>
+        <li>Serial Number <b>1</b></li>
+        <li>Serial Number <b>2</b></li>
+        <li>Serial Number <b>3</b></li>
+        <li>Serial Number <b>4</b></li>
+        <li>Serial Number <b>5</b></li>
+        </ol>
+
+        <ul>
+        <li>Serial Number <b>1</b></li>
+        <li>Serial Number <b>2</b></li>
+        <li>Serial Number <b>3</b></li>
+        <li>Serial Number <b>4</b></li>
+        <li>Serial Number <b>5</b></li>
+        </ul>
+
+        <dl>
+        <dt>
+            <h1>API</h1>
+        </dt>
+        <dd>
+            <h3>Application Programming Interface.</h3>
+        </dd>
+        <dt>
+            <h1>HTTP</h1>
+        </dt>
+        <dd>
+            <h4>HyperText Transfer Protocol.</h4>
+        </dd>
+        <dt>
+            <h2>ASCII</h2>
+        </dt>
+        <dd>
+            <h4>American Standard Code for Information Interchange.</h4>
+        </dd>
+        </dl>
+
+        <table>
+            <caption>
+                <h1>February 2025</h1>
+            </caption>
+            <colgroup>
+                <col span="6" class="weekday" />
+                <col span="1" class="weekend" />
+            </colgroup>
+            <thead>
+                <tr>
+                <th>Sat</th>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+        <h1>Welcome To My Project</h1>
+        <p>
+            This is the first line.<br />
+            This is the second line, created using a line break.<br />
+            Here's the third line, following the second one.
+        </p>
+        <p>
+            <b>The</b> <br />
+            tag is useful for breaking text into multiple lines without starting a
+            new paragraph.
+        </p>
+        </div>
+        <br /><br />
+        <div>
+        <h1>Programming Journey</h1>
+        <p>Object-oriented programming language developed by Microsoft as part of its .NET framework.</p>
+        <hr />
+        <p>
+            Python is a versatile language known for its simplicity and readability.
+        </p>
+        <hr />
+        <p>
+            Java is a powerful object-oriented programming language used widely in
+            enterprise applications.
+        </p>
+        <hr />
+        <p>SQL is a standard language for managing and manipulating databases.</p>
+        </div>
+        <br /><br />
+        <div>
+        <p>
+            Downloading:
+            <progress value="90" max="100"></progress>
+            600%
+        </p>
+        </div>
+        <div>
+        <p>
+            Memory usage:
+            <meter value="60" max="100"></meter>
+            120GB of 600GB
+        </p>
+        </div>
+        <div>
+        <p>This is a Formula of area of the Curcle:</p>
+        <code>area = math.pi * (radius ** 2)</code>
+        </div>
+        <div>
+        <pre>
+                This is a simple webpage to demonstrate HTML structure.
+            </pre
+        >
+        </div>
+        <div>
+        <h1>IT course</h1>
+        <iframe id="iframe" src="https://www.isdb-bisew.org/it-scholarship-programme"
+        ></iframe>
+        </div>
+        <div class="nextdiv">
+            <a href="Chapter_3.html">Next</a>
+        </div>
+        <div class="backDiv">
+        <a href="Home_Menu.html">Back</a>
+        </div>
+        <footer>&copy; 2025  Mahmudul Hasan</footer>
+
+  </body>
+</html>

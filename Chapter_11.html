@@ -1,0 +1,74 @@
+<!--  Topic Covered : 
+  1.Relative Lengths
+  2. inline css
+  3.Internal CSS
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="CH 11.css">
+    <style type="text/css">
+      p {
+        color: rgb(99, 61, 212);
+        font-size: 30px;
+      }
+    </style>
+    <link rel="stylesheet" href="Home.css">
+  </head>
+  
+  <body>
+    <h1 style="background-color: darkcyan; color: white; text-align: center; padding: 7px;">Chapter 11</h1>
+    <article>
+      <p>
+        This element does not have any specific styling, so it inherits the default
+        font size of 16px from its parent.
+      </p>
+      <p class="custom">
+        This element has a custom style "font-size: 2em" applied, which makes the font size
+        32px (16 * 2 = 32) based on the inherited font size.
+      </p>
+    </article>
+  
+    <div class="parent">
+      I'm 15px
+      <div class="child">
+        I'm 30px, as expected
+        <div class="child child-inner">
+          I'm 45px, correctly scaled
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="par">
+      I'm 16px
+      <div class="chi">
+        I'm 20px, as expected
+        <div class="chi inner-chi">I'm 20px, good!</div>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <p style="color: blue; font-size: 24px; font-weight: bold;">
+        This is the first project title.
+      </p>
+      <p style="color: green; font-size: 18px; font-style: italic;">
+        This is the second project title.
+      </p>
+    </div>
+    <br><br><br>
+    <p> This is the First project title.</p>
+    <p> This is the second project title.</p>
+    <div class="nextdiv">
+      <a href="Chapter_12.html">Next</a>
+  </div>
+    <div class="backDiv">
+      <a href="Home_Menu.html">Home</a>
+    </div>
+  </body>
+  
+  </html>

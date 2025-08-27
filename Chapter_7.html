@@ -1,0 +1,303 @@
+<!-- Topics Covered :
+  1.SVG Graphics
+  2.SVG Rectangle
+  3.SVG Circle
+  4.SVG Ellipse
+  5.SVG Line
+  6.SVG Polyline
+  7.SVG Polygon
+  8.SVG Path
+  9.SVG Text
+  10.SVG Link
+  11.SVG Stroke
+  12.Dash Stroke
+  13.SVG Gradients
+  14.Radial Gradient
+  15.Canvas & Draw Text
+  16.Draw a rectangle
+  17.Draw a circle
+  18.Draw a  line
+  19.Draw Gradients 
+  20. Draw Images
+  -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  
+  <body>
+    <h1 style="background-color: darkcyan; color: white; text-align: center; padding: 7px;">Chapter 07</h1>
+    <!-- SVG Graphics-->
+  
+    <svg width="100" height="100">
+      <line x1="0" y1="0" x2="120" y2="60" stroke="blue" stroke width="4" />
+    </svg>
+  
+    <!-- SVG Rectangle-->
+  
+    <svg width="120" height="120">
+      <rect x="10" y="10" width="100" height="80" stroke="blue" stroke width="4" fill="White" />
+    </svg>
+  
+    <svg width="150" height="150">
+      <rect x="10" y="40" width="100" height="80" rx="8" ry="8" stroke="green" stroke-width="6" fill="yellow" />
+    </svg>
+  
+    <!-- SVG Circle-->
+  
+    <svg width="100" height="100">
+      <circle cx="50" cy="45" r="35" stroke="purple" stroke-width="4" fill="lightpink" />
+    </svg>
+  
+    <!-- SVG Ellipse-->
+  
+    <svg width="150" height="150">
+      <ellipse cx="60" cy="60" rx="40" ry="20" fill="blue" stroke="green" stroke-width="4" />
+    </svg>
+  
+    <!-- SVG Line-->
+  
+    <svg width="120" height="120">
+      <line x1="0" y1="0" x2="120" y2="60" stroke="blue" stroke-width="4" />
+    </svg>
+  
+    <!-- SVG Polyline-->
+  
+    <svg width="120" height="120">
+      <polyline points="50,0 100,50 50,100 0,50" fill="none" stroke="blue" stroke-width="4" />
+    </svg>
+  
+    <!-- SVG Polygon-->
+  
+    <svg width="100" height="100">
+      <polygon points="50,0 100,50 50,100 0,50" fill="blue" stroke="red" stroke-width="4" />
+    </svg>
+  
+    <!-- SVG Path-->
+  
+    <svg height="150" width="150">
+      <path d="M50 0 L25 80 l50 0 Z" fill="yellow" stroke="blue" stroke width="4" />
+    </svg>
+  
+    <!--SVG Text-->
+  
+    <svg height="100" width="200">
+      <text x="0" y="20" fill="red">
+        Mahmudul Hasan.
+        <tspan x="10" y="50" fill="blue">IsDB-BISEW.</tspan>
+        <tspan x="20" y="80" fill="green">PeopleNtech.</tspan>
+      </text>
+    </svg>
+  
+    <!--SVG Text-->
+  
+    <svg height="150" width="190">
+      <text x="40" y="30" fill="blue" transform="rotate(40)">Mahmudul Hasan.</text>
+    </svg>
+    <br>
+  
+    <!--SVG Link-->
+  
+    <svg height="100" width="200">
+      <a xlink:href="https://careerhub.isdb-bisew.info/" target="_blank">
+        <text x="0" y="20" fill="blue">Click here</text>
+      </a>
+    </svg>
+  
+    <!--SVG Stroke-->
+  
+    <svg width="100" height="100">
+      <line x1="0" y1="0" x2="100" y2="50" stroke="blue" stroke-width="4" />
+    </svg>
+  
+    <!--SVG Stroke-->
+  
+    <svg width="120" height="120">
+      <line x1="20" y1="20" x2="100" y2="20" stroke="blue" stroke-width="4" />
+      <line x1="20" y1="40" x2="100" y2="40" stroke="blue" stroke-width="4" stroke-linecap="butt" />
+      <line x1="20" y1="60" x2="100" y2="60" stroke="blue" stroke-width="4" stroke-linecap="square" />
+      <line x1="20" y1="80" x2="100" y2="80" stroke="blue" stroke-width="4" stroke-linecap="round" />
+    </svg>
+  
+    <!--Dash Stroke-->
+  
+    <svg width="300" height="100">
+      <line x1="0" y1="20" x2="300" y2="20" stroke="blue" stroke-width="4" stroke-dasharray="15,10,5" />
+    </svg>
+  
+    <!-- SVG Gradients-->
+  
+    <svg height="150" width="300">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="blue" />
+          <stop offset="50%" stop-color="purple" />
+          <stop offset="100%" stop-color="pink" />
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="300" height="150" fill="url(#grad)" />
+    </svg>
+  
+    <!-- SVG Gradients-->
+  
+    <svg height="100" width="200">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="10%" stop-color="blue" />
+          <stop offset="50%" stop-color="green" />
+          <stop offset="100%" stop-color="yellow" />
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="100" height="150" fill="url(#grad)" />
+    </svg>
+    <br>
+    <!-- Radial Gradient-->
+  
+    <svg height="150" width="250">
+      <defs>
+        <radialGradient id="grad" cx="60%" cy="40%" r="70%" fx="40%" fy="30%">
+          <stop offset="0%" stop-color="lightblue" />
+          <stop offset="60%" stop-color="blue" />
+          <stop offset="100%" stop-color="darkblue" />
+        </radialGradient>
+      </defs>
+      <rect x="0" y="0" width="250" height="150" fill="url(#grad)" />
+    </svg>
+  
+    <svg height="150" width="250">
+      <defs>
+        <filter id="my-filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+        </filter>
+      </defs>
+      <rect x="25" y="25" width="200" height="100" fill="blue" filter="url(#my-filter)" />
+    </svg>
+  
+    <!-- Canvas & Draw Text-->
+  
+    <canvas id="my-canvas" width="200" height="100" style="border:
+            1px solid #925858"> </canvas>
+    <script>
+      var c = document.getElementById("my-canvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "20px Arial";
+      ctx.fillText("Mahmudul Hasan", 10, 50);
+    </script>
+  
+    <br><br><br>
+    <div>
+      <canvas id="my-canvas" width="300" height="150" style="border: 1px solid #ccc;"></canvas>
+  
+      <script>
+        var c = document.getElementById("my-canvas");
+        var ctx = c.getContext("2d");
+        // Draw a diagonal line
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(300, 150);
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        // Draw a rectangle
+        ctx.beginPath();
+        ctx.rect(50, 50, 100, 50);
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+  
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(200, 75, 40, 0, 2 * Math.PI);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      </script>
+  
+    </div>
+    <br><br><br>
+    <div>
+      <canvas id="my-canvas" width="250" height="150" style="border: 1px solid #ccc;">
+      </canvas>
+  
+      <script>
+        var c = document.getElementById("my-canvas");
+        var ctx = c.getContext("2d");
+  
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 0, 150);
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(0.5, "cyan");
+        grd.addColorStop(1, "lightblue");
+        ctx.fillStyle = grd;
+  
+        // Draw a filled rectangle
+        ctx.fillRect(30, 30, 190, 90); 
+      </script>
+    </div>
+  
+    <br><br><br>
+  
+    <div>
+      <canvas id="my-canvas" width="300" height="150" style="border: 1px solid #ccc;">
+        This browser does not support the canvas tag.
+      </canvas>
+  
+      <script>
+        var c = document.getElementById("my-canvas");
+        var ctx = c.getContext("2d");
+  
+        // Create radial gradient
+        var grd = ctx.createRadialGradient(150, 75, 20, 150, 75, 100); // Centered radial gradient
+        grd.addColorStop(0, "red");
+        grd.addColorStop(0.5, "green");
+        grd.addColorStop(1, "white");
+  
+        // Fill with gradient
+        ctx.fillStyle = grd;
+  
+        // Draw a filled rectangle
+        ctx.fillRect(0, 0, 300, 150); // Full canvas size
+      </script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+      <canvas id="my-canvas" width="300" height="200" style="border: 2px solid rgb(25, 0, 255);">
+      </canvas>
+  
+      <script>
+        var c = document.getElementById("my-canvas");
+        var ctx = c.getContext("2d");
+  
+        const image = new Image();
+        image.onload = drawMyImage;
+  
+        // Load an image (change "my-img.jpg" to your image URL or path)
+        image.src = "image/Hand.jpg";
+  
+        function drawMyImage() {
+          ctx.drawImage(this, 100, 50);
+  
+  
+          ctx.drawImage(this, 10, 10, 100, 100);
+          ctx.drawImage(this, 50, 50, 100, 100, 200, 10, 80, 80);
+        }
+      </script>
+    </div>
+    <div class="nextdiv">
+      <a href="Chapter_11.html">Next</a>
+  </div>
+    <div class="backDiv">
+      <a href="Home_Menu.html">Home</a>
+    </div>
+  </body>
+  
+  </html>

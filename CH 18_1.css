@@ -1,0 +1,207 @@
+.con{
+    border: 1px solid red;
+    width: 300px;
+    height: 100px;
+   }
+   
+  .inline-blocks {
+    display: inline-block;
+    border: 1px solid green;
+    height: 40px;
+   }
+   
+  .normal-blocks {
+    border: 1px solid blueviolet;
+   }
+
+
+   .hide {
+    display: none;
+   }
+   
+  .invisiblity {
+    visibility: hidden;
+   }
+
+
+   img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    object-fit: contain;
+   }
+   #img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    object-fit: cover;
+   }
+   #image {
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    object-fit: none;
+   }
+
+   #images {
+    width: 170px;
+    height: 120px;
+    border: 1px solid rgb(3, 132, 196);
+    object-fit: scale-down;
+    }
+
+    .cursor {
+        cursor: pointer;
+        background-color: coral;
+        }
+
+
+    .father {
+        border: 1px solid green;
+        width: 180px;
+        height: 100px;
+        }
+    .child {
+        margin: 10px;
+        border: 1px solid blue;
+        background-color: white;
+        height: 130px;
+        }
+
+    .X {
+        border: 1px solid green;
+        overflow: hidden;
+        width: 180px;
+        height: 100px;
+        }
+    .Y {
+        margin: 10px;
+        border: 1px solid blue;
+        background-color: white;
+        height: 180px;
+        }
+    .A {
+        border: 1px solid green;
+        overflow: scroll;
+        width: 120px;
+        height: 100px;
+        }
+    .B {
+        margin: 10px;
+        border: 1px solid blue;
+        background-color: white;
+        height: 180px;
+        }
+
+    .C {
+        border: 1px solid green;
+        overflow: auto;
+        width: 120px;
+        height: 100px;
+        }
+    .D {
+        margin: 10px;
+        border: 1px solid blue;
+        background-color: white;
+        height: 180px;
+        }
+
+            /* CSS Opacity*/
+
+       .con {
+            background-color: rgb(50, 180, 30);
+            padding: 20px;
+            margin: 10px;
+            }
+ 
+        .con.opacity {
+            opacity: 0.3;
+            }
+        .con.transparent {
+            background-color: rgba(134, 44, 176, 0.5);
+            }
+        .child {
+            border: 1px solid rgb(237, 96, 1);
+            }
+
+        h1 {
+            text-shadow: 4px 4px blue;
+            }
+
+        #head {
+            color: white;
+            text-shadow: 0 0 2px rgb(38, 162, 20), 0 0 20px rgb(255, 0, 49);
+            }
+
+        #body {
+            color: white;
+            text-shadow: -2px 0 blue, 0 2px gray, 2px 0 blueviolet, 0 -2px black;
+            }
+
+        
+        .head {
+        border: 1px solid black;
+        box-shadow: 5px 5px yellow;
+        }
+        .body {
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px 2px blue;
+            }
+        .leg {
+            border: 1px solid black;
+            box-shadow: 8px 0 10px red, 0 8px 10px blue;
+            }
+
+            /*===========*/
+
+            .head {
+                column-count: 4;
+                column-gap: 40px;
+                column-rule-style: solid;
+                column-rule-width: 1px;
+                column-rule-color: blue;
+                background-color: aliceblue;
+                }
+            
+            .body {
+                column-count: 4;
+                column-gap: 30px;
+                column-rule: 1px solid blue;
+                column-width: 180px;
+                background-color: lightcyan;
+                }
+            
+            
+            .leg {
+                column-count: 4;
+                column-gap: 40px;
+                column-rule: 1px solid blue;
+                background-color: lightskyblue;
+                }
+                   
+            h1 {
+                column-span: all;
+                }
+            
+            
+            
+            table {
+                border-collapse: collapse;
+                border: 1px solid coral;
+                width: 50%;
+                }
+                   
+            th {
+                border: 1px solid greenyellow;
+                height: 40px;
+                }
+            td {
+                border: 1px solid blue;
+                height: 40px;
+                text-align: center;
+                vertical-align: top;
+                }
+
+
+           
+    

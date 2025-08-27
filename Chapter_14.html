@@ -1,0 +1,107 @@
+<!--topics Covered:
+1.Border Box
+2. CSS Margins
+3.Auto Margin
+4.Collapsing Margins
+5. CSS Outline
+6. Border Styles 
+7. CSS Border Radius
+8.CSS Border Images
+9.CSS padding
+10.CSS Width and Height
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="CH 14.css">
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <h1 style="background-color: darkcyan; color: white; text-align: center; padding: 7px;">Chapter 14</h1>
+    <pre id="my-element">
+            #my-element {
+             width: 300px;
+             height: 150px;
+             padding: 10px;
+             border: 5px solid red;
+             margin: 8px;
+             box-sizing: border-box;
+            }
+                </pre>
+    <span id="result"></span>
+
+    <script>
+        var myElement = document.getElementById("my-element");
+        var width = myElement.offsetWidth;
+        var height = myElement.offsetHeight;
+
+        document.getElementById("result").innerHTML =
+            "Element size: width = " + width + "px, height = " + height + "px";
+    </script>
+
+    <!--CSS Margins-->
+    <div id="parent">
+        <div id="child">
+            The discovery of the text's origin is attributed to Richard McClintock, a Latin scholar at Hampden–Sydney
+            College. McClintock connected Lorem ipsum to Cicero's writing sometime before 1982 while searching for
+            instances
+            of the Latin word consectetu
+        </div>
+    </div>
+    <br><br>
+    <!--Auto Margin-->
+    <div id="X">
+        <div id="Y">origin is attributed to Richard McClintock, a Latin scholar at Hampden.I must explain to you how all
+            this mistaken idea of reprobating pleasure and extolling pain arose. To do so, I will give you a complete
+            account of the system, and expound the actual teachings of the great explorer of the truth, the
+            master-builder of human happiness. No one rejects, dislikes or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that
+            are extremely painful.
+        </div>
+    </div><br>
+
+    <!--Collapsing Margins-->
+    <div id="A">
+        <div id="A-one">Islamic Development bank.</div>
+        <div id="A-two">IsDB-BISEW.</div>
+    </div>
+    <br><br>
+
+    <!-- CSS Outline-->
+
+    <p> assalamu alaikum ,My trainee Id Number Is 1286160.</p>
+
+    <br><br><br>
+    <div>
+        <!--CSS Border Radius-->
+        <p>border-radius: 20px:</p>
+        <p id="A1"></p>
+
+        <p>border-radius: 50%:</p>
+        <p id="A2"></p>
+
+
+        <!--CSS Border Images-->
+
+        <p id="round"></p>
+        <p id="stretch"></p>
+
+        <!--CSS padding & CSS Width and Height-->
+        <p id="pad">This is my first project.</p>
+        <p id="padding">This is my first project.</p>
+    </div>
+    <div class="nextdiv">
+        <a href="Chapter_15.html">Next</a>
+    </div>
+    <div class="backDiv">
+        <a href="Home_Menu.html">Home</a>
+    </div>
+
+</body>
+
+</html>

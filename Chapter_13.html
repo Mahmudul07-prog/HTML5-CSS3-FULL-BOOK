@@ -1,0 +1,74 @@
+<!--Topic Covered:
+
+1.The Last Declaration Will Win
+2.The More Specific Declaration Will Win
+3.Inline Style Is Preferred to both Internal and External Styles
+4.“!important” Declaration Is the Strongest Rule
+5. Inheritance
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="CH 13.css">
+  <style>
+    h1 {
+      color: red;
+    }
+
+    h1 {
+      color: coral;
+    }
+
+    #heading-one {
+      color: green;
+    }
+
+    #styles {
+      color: green !important;
+    }
+  </style>
+  <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+  <h1 style="background-color: darkcyan; color: white; text-align: center; padding: 7px;">Chapter 13</h1>
+  <h1>Mahmudul Hasan</h1>
+  <p>My project.</p>
+
+
+  <h2 id="heading-one" class="heading first">My name is ...</h2>
+  <p>Mahmudul Hasan.</p>
+  <h2 id="heading-two" class="heading">i live in ...</h2>
+  <p>Dhaka,bangladesh.</p>
+  <br><br>
+
+
+  <h1 id="heading-one" style="color: greenyellow">My name is ...</h1>
+  <p>Mahmudul Hasan.</p>
+  <br><br>
+
+  <h1 id="styles" style="color: crimson">IsDb-BISEW</h1>
+  <p>My first project.</p>
+  <br><br>
+
+
+  <article class="parent">
+    <h1>Project</h2>
+      <p class="line first"> This is the First line.</p>
+      <p class="line second">This is the Second line.</p>
+  </article>
+  <div class="nextdiv">
+    <a href="Chapter_14.html">Next</a>
+</div>
+  <div class="backDiv">
+    <a href="Home_Menu.html">Home</a>
+  </div>
+</body>
+
+</html>

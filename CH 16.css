@@ -1,0 +1,117 @@
+/*  */
+
+p {
+    color: coral;
+    text-decoration-line: underline;
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 3px;
+    }
+
+
+.X1 {
+    text-decoration-style: dotted;
+    }
+       
+.X2 {
+    text-decoration-style: wavy;
+    }
+       
+.X3 {
+    text-decoration-style: dashed;
+    }
+       
+.X4 {
+    text-decoration-style: unset;
+    }
+
+
+
+    .X4{
+    text-decoration: underline blue wavy 2px;
+      }
+
+    .X3{
+        text-transform: uppercase;
+        }
+
+    .hide{
+        white-space: pre-wrap;
+        }
+
+
+
+   .test {
+        white-space: nowrap;
+        width: 400px;
+        border: 1px solid #edf348;
+        overflow: hidden;
+        text-overflow: clip;
+        }
+           
+    .test2 {
+        white-space: nowrap;
+        width: 400px;
+        border: 1px solid #e80000;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+
+    .wrap {
+        width: 200px;
+        border: 1px solid #4104c4;
+        word-wrap:break-word;
+        }
+
+
+        p[class] {
+            width: 120px;
+            border: 1px solid #341c1cae;
+           }
+
+    .break {
+        word-break: break-word;
+        }
+    .keep {
+        word-break: keep-all;
+
+        }
+    .breakall {
+        word-break: break-all;
+
+        }
+    .keep {
+        letter-spacing: 3px;
+        }
+
+        .hide {
+            line-height:80%; /* 20px * 80% = 16px */
+            }
+
+
+            /*=============*/
+
+            /*  */
+
+p {
+    width: 150px;
+    border: 1px solid blue;
+   }
+   
+  .one {
+    text-align: justify;
+   }
+   .two {
+    text-align: center;
+   }
+   .indent {
+    text-indent: 30px;
+   }
+
+   p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .90em;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    }

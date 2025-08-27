@@ -1,0 +1,80 @@
+.bdy {
+    display:block;
+    width: 160px;
+   }
+   
+  ul.cir{
+    list-style-type: circle;
+   }
+   ul.squ{
+    list-style-type: square;
+   }
+   
+  ol.up{
+    list-style-type: upper-roman;
+   }
+   ol.low{
+    list-style-type: lower-alpha;
+   }
+
+   ul.names {
+    list-style-image: url("image/Node.jpg");
+    }
+    
+
+
+    div {
+    width: 200px;
+    border: 2px solid blue;
+    }
+.other {
+        transform: translate(40px, 80px);
+    }
+
+
+#X {
+    width: 200px;
+    border: 1px solid black;
+    }
+       
+.testing {
+    position: relative;
+    left: 100px;
+    top: 30px;
+    transform: scale(2, 3);
+    }
+
+
+.div2 {
+    transform: rotate(180deg);
+    }
+       
+.div3 {
+    transform: rotate(-20deg);
+    }
+
+
+
+.class1 {
+    transform: rotateX(170deg);
+    }
+.class2 {
+    transform: rotateY(180deg);
+    }
+.class3 {
+    transform: rotateZ(-100deg);
+    }
+
+
+
+.cla1 {
+    transform: skewX(40deg);
+        }
+.cla2 {
+    transform: skewY(-20deg);
+    }
+.cla3 {
+    position: relative;
+    top: 70px;
+    transform: skew(30deg, 15deg);
+    }

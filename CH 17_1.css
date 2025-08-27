@@ -1,0 +1,218 @@
+p {
+    color: red;
+    border: 1px solid red;
+    width: 380px;
+    height: 380px;
+    background-image: url("image/Hand.jpg");
+    background-color: blueviolet;
+}
+#repeat {
+    color: green;
+    border: 1px solid red;
+    width: 380px;
+    height: 190px;
+    background-image: url("image/images (1).jpg");
+    background-repeat: repeat-x;
+    }
+
+#repeaty {
+    color: blueviolet;
+    border: 1px solid yellowgreen;
+    width: 380px;
+    height: 290px;
+    background-image: url("image/images (1).jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    }
+#Space {
+    color: blueviolet;
+    border: 1px solid yellowgreen;
+    width: 380px;
+    height: 290px;
+    background-image: url("image/images (1).jpg");
+    background-repeat: space;
+    background-size: contain;
+    }
+#Round {
+    color: blueviolet;
+    border: 1px solid yellowgreen;
+    width: 380px;
+    height: 380px;
+    background-image: url("image/images (1).jpg");
+    background-repeat: space;
+    background-size: 70% 80%;
+    }
+#Norepeat {
+    color: blueviolet;
+    border: 1px solid yellowgreen;
+    width: 280px;
+    height: 280px;
+    background-image: url("image/images (1).jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 80px 80px;
+}
+
+    /*============*/
+
+    .X {
+        border: 10px dotted blue;
+        padding: 20px;
+        background: gold;
+       }
+       
+    .padding {
+        background-clip: padding-box;
+       }
+       
+    .Content{
+        background-clip: content-box;
+       }
+    
+    .Y {
+        width: 300px;
+        height: 100px;
+        color: blue;
+       border: 10px solid blanchedalmond;
+       padding: 35px;
+       background: url(image/IDM.jpg);
+       background-repeat: no-repeat;
+       }
+    .Con {
+       background-origin: border-box;
+       }
+
+        /*===========*/
+
+        body {
+            margin: 0;
+           }
+           
+          header {
+            height: 80px;
+           }
+           
+          .fixed {
+            background-position: center 80px;
+            height: 500px;
+            background-image: url("image/Hand.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+           }
+           
+          footer {
+            height: 700px;
+            background-color: lightgreen;
+           }
+        
+           p {
+            width: 100px;
+            height: 200px;
+            overflow: auto;
+            border: 1px solid blue;
+            background-image: url("image/IDM.jpg");
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background: linear-gradient(green
+            , red);
+           }
+        
+           #X {
+            height: 50px;
+            background: linear-gradient(to right, coral
+            , lightgreen);
+            }
+        
+            #Y {
+                height: 100px;
+                background: linear-gradient(to bottom right, coral, lightgreen);
+                }
+        
+            #Z {
+                height: 100px;
+                background: linear-gradient(-90deg, coral, yellow);
+                }
+
+    /*============*/
+    .split {
+        background-image: url("image/FB.jpg");
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+        display: inline-block;
+        }
+        .testing {
+        background-position: -10px -10px;
+        }
+        .number-1 {
+        background-position: 0 0;
+        }
+        .number-2 {
+        background-position: -40px 0;
+        }
+        .number-3 {
+        background-position: -90px 10;
+        }
+        .number-4 {
+        background-position: 0 -60px;
+        }
+        .number-5 {
+        background-position: -50px -50px;
+        }
+        .number-6 {
+        background-position: -80px -70px;
+        }
+        .number-7 {
+        background-position: 0 -100px;
+        }
+        .number-8 {
+        background-position: -50px -100px;
+        }
+        .number-9 {
+        background-position: -80px -90px;
+        }
+    
+    
+    
+    .nav li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: left;
+           }
+    .nav li,
+        .navlist a {
+        display: block;
+        height: 50px;
+        width: 50px;
+        }
+           
+    .split {
+        background-image: url("image/Hand.jpg");
+        }
+           
+    .home {
+        background-position: 0 0;
+        }
+    .home:hover {
+        background-position: 100px -50px;
+        background-color: coral;
+        }
+           
+    .about {
+        background-position: -50px 0;
+        }
+    .about:hover {
+        background-position: -50px -50px;
+        background-color: coral;
+        }
+           
+    .details {
+        background-position: -100px 0;
+        }
+           
+    .details:hover {
+        background-position: -100px -50px;
+        background-color: coral;
+        }
+          

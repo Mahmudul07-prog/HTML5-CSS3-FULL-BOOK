@@ -1,0 +1,25 @@
+article {
+    font-size: 30px;
+   }
+   
+  .custom {
+    font-size: .90em;
+   }
+   .parent {
+    font-size: 1em; /* Inherits from body (15px) */
+  }
+  
+  .child {
+    font-size: 2em; /* Scales to 30px (15px * 2) */
+  }
+  .par {
+    font-size: 1em; /* Inherits from body (16px) */
+  }
+  
+  .chi {
+    font-size: 1.25em; /* Scales to 20px (16px * 1.25) */
+  }
+  
+  .inner-chi {
+    font-size: inherit; /* Inherits the 20px size from its parent */
+  }

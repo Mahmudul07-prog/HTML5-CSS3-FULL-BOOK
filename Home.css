@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+}
+.backDiv {
+    display: flex;
+    justify-content: end;
+}
+.nextdiv {
+    display: flex;
+    justify-content: end;
+}
+
+.nextdiv a {
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid rgb(0, 255, 106);
+    border-radius: .5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 5px;
+}
+.backDiv a{
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid rgb(0, 255, 106);
+    border-radius: .5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 5px;
+}
+
+.nextdiv a:hover {
+    background-color: rgb(184, 126, 238);
+}
+.backDiv a:hover {
+    background-color: rgb(184, 126, 238);
+}

@@ -1,0 +1,47 @@
+ /* ID Selector */
+ #heading-one {
+    color: violet;
+   }
+   
+  /* Multiple-Class Selector */
+   .heading.first {
+    color: red;
+   }
+   
+  /* Combined Selector of Classes and Tags */
+   body .heading {
+    color: blue;
+   }
+   
+  /* Class Selector */
+   .heading {
+    color: green;
+   }
+   
+  /* Combined Selector of Tags */
+   body h2 {
+    color: yellow;
+   }
+   
+  /* Type Selector */
+   h2 {
+    color: black;
+   }
+   
+  /* Universal Selector */
+   * {
+    color: palevioletred;
+   }
+
+    /* Inheritance*/
+   .parent {
+    color: goldenrod;
+   }
+   
+  .line {
+    color: violet;
+   }
+   
+  .first {
+    color: blue;
+   }

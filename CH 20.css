@@ -1,0 +1,229 @@
+/*CSS Transitions*/
+div {
+  width: 120px;
+  height: 120px;
+  color: white;
+  background: coral;
+  transition: width 3s;
+}
+
+div:hover {
+  width: 300px;
+}
+
+/*Basic Transitions*/
+.new {
+  width: 800px;
+  height: 80px;
+  color: white;
+  background: blue;
+  transition: width 2s, height 4s, transform 2s;
+}
+
+.new:hover {
+  width: 250px;
+  height: 250px;
+  transform: skewX(50deg);
+}
+
+/*Transition Delay*/
+.delay {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background: blue;
+  transition: width 2s, height 4s;
+  transition-delay: 1s;
+}
+
+.delay:hover {
+  width: 200px;
+  height: 200px;
+}
+
+/* Transition Timing Function*/
+.property {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background: blue;
+  transition: width 2s, height 4s;
+  transition-timing-function: ease-out;
+}
+
+.property:hover {
+  width: 280px;
+  height: 280px;
+}
+
+/* Shorthand Transition Property*/
+.shorthand {
+  transition: width 2s linear 1s;
+}
+
+/*===========*/
+
+/*Two-step Keyframes*/
+@keyframes my-animation {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    background-color: coral;
+  }
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  animation-name: my-animation;
+  animation-duration: 6s;
+}
+
+/* Multiple Keyframes*/
+@keyframes my-animation {
+  0% {
+    background-color: coral;
+  }
+  30% {
+    background-color: blue;
+  }
+  60% {
+    background-color: lightcyan;
+  }
+  80% {
+    background-color: deeppink;
+  }
+  100% {
+    background-color: rebeccapurple;
+  }
+}
+
+.multi {
+  width: 120px;
+  height: 100px;
+  background-color: rgba(95, 26, 163, 0.54);
+  animation-name: my-animation;
+  animation-duration: 3s;
+}
+
+/*Animation Delay*/
+@keyframes my-animation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: rgb(217, 251, 25);
+  }
+  100% {
+    background-color: rgb(153, 10, 255);
+  }
+}
+
+.dlay {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  animation-name: my-animation;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+/*Animation Iteration Count*/
+@keyframes my-animation {
+  0% {
+    background-color: burlywood;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: coral;
+  }
+}
+
+.Iteration {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(190, 18, 216);
+  animation-name: my-animation;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+}
+
+/*=========*/
+
+/*  Animation Direction*/
+@keyframes my-animation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 580px;
+  }
+}
+.Animation {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  animation-name: my-animation;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-direction: reverse;
+}
+
+/*  Alternate Direction*/
+@keyframes my-animation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 580px;
+  }
+}
+.Alternate {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(17, 20, 226);
+  color: aqua;
+  animation-name: my-animation;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+/* Animation Timing Function*/
+@keyframes my-animation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 600px;
+  }
+}
+.ease-out {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+  animation-name: my-animation;
+  animation-duration: 3s;
+}
+
+/* Shorthand Animation Property*/
+.linear {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+
+  animation: my-animation 5s linear infinite alternate;
+}

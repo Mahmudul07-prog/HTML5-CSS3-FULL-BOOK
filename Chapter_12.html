@@ -1,0 +1,391 @@
+<!--Topics Covered :
+1. Universal Selector
+2. ID Selector
+3.Multiple-class Selector
+4.ID Selector
+5. Type Selector
+6.CSS Pseudo-class
+7.Cursor Interaction
+8.Status of Elements  (enable & disabled,Checked)
+9.Form Validation(invalid,required)
+10.Form Validation (out of range)
+Child Elements
+11.nth-child(N
+12.nth-child(odd) 
+13.nth-child(even)
+14.first-of-type
+15.last of type
+16.nth-of-type(N)
+17.nth-last-of-type
+18.only-of-type(N)
+19.pseudo-class =>target
+20.pseudo-class =>not(selector)
+21.Pseudo-class Chain
+22.pseudo-Element ::first-letter
+23.pseudo-Element ::first-line
+24.pseudo-Element ::before
+25.pseudo-Element::after
+26.pseudo-Element  ::selection
+27. pseudo-Element  Descendant selector
+28. pseudo-Element  Child Selector
+29.Adjacent Sibling Selector
+30.General Sibling Selector
+31.attribute
+32.attribute="value" 
+33.[attribute|="value"
+34.attribute~="value"
+35.attribute^="value"
+36.attribute$="value"]
+37.attribute*="value"
+38. Selector Grouping
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link rel="stylesheet" href="CH 12.css">
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <h1 style="background-color: darkcyan; color: white; text-align: center; padding: 7px;">Chapter 12</h1>
+    <div>
+        <p>My name is </p>
+    </div>
+    <p>Mahmudul Hasan</p>
+
+    <!-- Type Selector -->
+
+    <div>
+        <p>My name is</p>
+    </div>
+    <p>Mahmudul Hasan</p>
+
+    <!-- ID Selector -->
+
+    <p id="my-text">My name is</p>
+    </div>
+    <p>Mahmudul Hasan</p>
+
+    <!-- Multiple-class Selector -->
+    <div>
+        <p class="my-text">My name is</p>
+        <p class="my-text">Mahmudul Hasan</p>
+    </div>
+    <p>IsDB-BiSEW</p>
+
+    <!--  CSS Pseudo-class -->
+    <a>Link for test</a>
+    <a href="https://www.facebook.com/login/" target="_blank">My
+        Facebook</a>
+    <a href="https://earth.google.com/web/" target="_blank">Google
+        Earth</a>
+
+    <!--   Cursor Interaction -->
+
+    <p>Press TAB to remove the focus on the button.</p>
+    <button>This is a button</button>
+
+    <!--    Status of Elements   (enable & disabled) -->
+
+    <p>Update user's information</p>
+    <p>Username: <input type="text" value="username" disabled />
+    </p>
+    <p>Email: <input type="text" value="email@htmlProject.com" /></p>
+
+    <!--    Status of Elements   (checked) -->
+
+    <p>Select options:</p>
+    <p>
+        Course:
+        <label><input type="radio" name="Course" />
+            <span>C#</span></label>
+        <label><input type="radio" name="Course" />
+            <span>GAVE</span></label>
+    </p>
+    <p>
+        <label><input type="checkbox" /> <span>Intrested </span></label>
+    </p>
+
+    <!--    Form Validation (invalid)-->
+    <form action="">
+        <p>This text input must be a three-letter code:</p>
+        <input type="text" name="code" pattern="[S-Zn-z]{3}" title="Three letter code." value="S" />
+    </form>
+
+    <!--    Form Validation (required)-->
+    <form action="">
+        <p>Text Must be Required:</p>
+        <input type="text" name="fname" required />
+    </form>
+
+    <!--    Form Validation (out of range)-->
+    <form action="">
+        <p>This number input must be in the range of 1 - 10:</p>
+        <input type="number" name="quantity" min="1" max="10" value="12" />
+    </form>
+    <br><br><br>
+
+    <div>
+        <!-- nth-child(N)-->
+        <div class="A">
+            <p>Number 1</p>
+            <p>Number 2</p>
+            <p>Number 3</p>
+        </div>
+        <p>Number 4</p>
+        <p>Number 5</p>
+        <p>Number 6</p>
+        <br><br>
+
+        <!-- nth-child(odd) -->
+        <div>
+            <p>NO. 1</p>
+            <p>NO. 2</p>
+            <p>NO. 3</p>
+        </div>
+        <p>NO. 4</p>
+        <p>NO. 5</p>
+        <p>NO. 6</p>
+
+        <!-- nth-child(even) -->
+        <div class="S">
+            <p>text 1</p>
+            <p>text 2</p>
+            <p>text 3</p>
+        </div>
+        <p>text 4</p>
+        <p>text 5</p>
+        <p>text 6</p>
+        <br><br>
+
+        <!-- only chiled -->
+        <div class="L">
+            <p>Line 1</p>
+        </div>
+        <p>Line 2</p>
+        <p>Line 3</p>
+        <!-- first of type -->
+        <div>
+            <div>Line 1</div>
+            <p>Line 2</p>
+            <p>Line 3</p>
+        </div>
+        <p>Line 4</p>
+        <br><br>
+
+        <!-- last of type -->
+        <p>Data 1</p>
+        <div>
+            <p>Data 2</p>
+            <p>Data 3</p>
+            <div>data 4</div>
+        </div>
+        <br>
+
+        <!-- nth-of-type(N) -->
+        <div>
+            <div class="O">Type 1</div>
+            <p>Type 2</p>
+            <p>Type 3</p>
+        </div>
+        <p>Type 4</p>
+
+        <!-- nth-last-of-type(N) -->
+        <p>Type 1</p>
+        <div>
+            <p>Type 2</p>
+            <p>Type 3</p>
+            <div>Type 4</div>
+        </div>
+
+        <!-- only-of-type(N) -->
+        <div>
+            <div>Type 4</div>
+            <p>Type 5</p>
+            <p>Type 6</p>
+        </div>
+        <p>Type 7</p>
+    </div>
+
+    <br><br><br>
+
+    <div>
+
+        <!--pseudo-class =>target-->
+        <a href="#tgt1">Select tgt 1</a>
+        <a href="#tgt2">Select tgt 2</a>
+        <p id="tgt1">tgt 1</p>
+        <p id="tgt2">tgt 2</p>
+
+        <!--    pseudo-class =>not(selector) -->
+        <form>
+            <p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" />
+            </p>
+            <input type="submit" value="Submit" />
+
+            <!--    pseudo-class chain -->
+
+            <div>
+                <a class="nav" href="#">Home</a>
+                <a class="nav" href="#">Links</a>
+                <a class="nav" href="#">About</a>
+                <a class="nav" href="#">Gellary</a>
+            </div>
+
+            <!--    pseudo-Element ::first-letter -->
+            <div class="ps">
+                <h1>My Name is</h1>
+                <p>Mahmudul Hasan</p>
+            </div>
+
+            <!--    pseudo-Element ::first-line -->
+
+            <div class="po">
+                <p>My Name is<br />Mahmudul Hasan.</p>
+            </div>
+
+            <!--    pseudo-Element  ::before -->
+            <div class="GG">
+                <p>
+                    <label class="required">Username: </label>
+                    <input type="text" />
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="text" />
+                </p>
+            </div>
+            <br>
+
+            <!--    pseudo-Element  ::after -->
+
+            <nav class="Dv">
+                <p>
+                    <label class="required">Username: </label>
+                    <input type="text" />
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="text" />
+                </p>
+            </nav>
+
+            <!--    pseudo-Element  ::selection -->
+            <div class="WWW">
+                <p>My ID Number 1286160 </p>
+            </div>
+
+            <!--    pseudo-Element  Descendant selector -->
+            <div class="Sanny">
+                <div>
+                    <p>text 1</p>
+                </div>
+                <p>text 2</p>
+            </div>
+
+            <!--    pseudo-Element  Child Selector  -->
+            <div class="SK">
+                <div>
+                    <p>Line 1</p>
+                </div>
+                <p>Line 2</p>
+            </div>
+
+            <!--    Adjacent Sibling Selector  -->
+            <div class="Con">
+                <div>
+                    <p>serial 1</p>
+                </div>
+                <p>serial 2</p>
+                <p>serial 3</p>
+            </div>
+
+            <!--    General Sibling Selector  -->
+            <div class="body">
+                <div>
+                    <p>serial 1</p>
+                </div>
+                <p>serial 2</p>
+                <p>serial 3</p>
+            </div>
+        </form>
+    </div>
+
+    <br><br><br>
+
+    <div>
+        <div>
+            <p class="text">My name is </p>
+        </div>
+        <p>Mahmudul Hasan</p>
+        <br><br>
+        <!-- attribute="value"-->
+
+        <div>
+            <p class="text1">My name is</p>
+        </div>
+        <p class="name"> Mahmudul Hasan</p>
+
+
+        <p>[class|="word"] { color: blue; }</p>
+        <p class="word">Word class: "word"</p>
+        <p class="highlighting my word">Word class: "highlighting my word"</p>
+        <p class="words highlight">Word class: "words highlight"</p>
+        <p class="words">Word class: "words"</p>
+        <br><br>
+
+        <p>[class~="color"] { color: green; }</p>
+        <p class="color">Word class: "word"</p>
+        <p class="highlight word">Word class: "highlight word"
+        </p>
+        <p class="word highlight">Word class: "word highlight"
+        </p>
+        <p class="highlight-word">Word class: "highlight-word"</p>
+        <p class="word-highlight">Word class: "word-highlight"</p>
+        <p class="words">Word class: "words"</p>
+
+
+        <p>[class^="san"] { color: green; }</p>
+        <p class="san">Word class: "My Name"</p>
+        <p class="Mahmudul">Word class: "Mahmudul"</p>
+        <p class="Hasan">Word class: "Hasan"
+        </p>
+        <p class="Mahmudul">Word class: "Mahmudul"</p>
+        <p class="Hasan">Word class: "Hasan"
+        </p>
+
+
+        <p>[class$="Doller"] { color: yellow; }</p>
+        <p class="Doller">Word class: "Mahmudul Hasan"</p>
+        <p class="sample1 word">Word class: "sample1"
+        </p>
+        <p class="sample2 ">Word class: "sample2 "</p>
+        <p class="sample3">Word class: "sample3"
+        </p>
+        <br><br>
+
+        <p class="style">Word class: "style"</p>
+        <p class="highlight ">Word class: "highlight "</p>
+        <p class="word">Word class: "word "</p>
+        <p class="highlight-word">Word class: "highlight-word"</p>
+    </div>
+    <div class="nextdiv">
+        <a href="Chapter_13.html">Next</a>
+    </div>
+    <div class="backDiv">
+        <a href="Home_Menu.html">Home</a>
+    </div>
+</body>
+
+</html>

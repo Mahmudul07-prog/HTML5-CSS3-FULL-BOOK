@@ -1,0 +1,224 @@
+/*Universal Selector*/
+body * p {
+    color: rgb(150, 158, 33);
+    }
+    /*type Selector*/
+p {
+   color: rgb(138, 29, 29);
+ }
+ /*ID Selector*/
+#my-text {
+    color: greenyellow;
+   }
+   /*class Selector*/
+.my-text {
+    color: bisque;
+   }
+   /*Multiple-class Selector*/
+   .my-text.main {
+    color: red;
+   }
+   
+  .my-text {
+    color: blue;
+   }
+    /*CSS Pseudo-class*/
+   :link {
+    color: red;
+   }
+   
+  :visited {
+    color: plum;
+   }
+
+   /*Cursor Interaction*/
+
+   :focus {
+    color: powderblue;
+   }
+   
+  :hover {
+    color: blueviolet;
+   }
+   
+  :active {
+    color: green;
+   }
+  
+   /*Status of Elements  (enable & disabled)*/
+   :enabled {
+    background-color: greenyellow;
+   }
+   
+  :disabled {
+    background-color: #9ed4dc;
+   }
+
+     /*Status of Elements(Checked)*/
+   input:checked + span {
+    color: darkgreen;
+   }
+     /*Form Validation  invalid*/
+   
+   input:invalid {
+    background-color: lightgreen;
+   }
+        /*Form Validation  required*/
+
+   input:required {
+    background-color: lightcoral;
+   }
+
+         /*Form Validation  out-of-range*/
+   input:out-of-range {
+    background-color: lightsalmon;
+   }
+
+   
+
+
+   /*Child Elements nth-child(N*/
+
+.A p:nth-child(3) {
+    color: coral;
+   }
+
+/*Child Elements nth-child(odd) */
+p:nth-child(odd) {
+    color: blueviolet;
+   }
+
+   /*Child Elements nth-child(even) */
+.S p:nth-child(even) {
+    color: rgb(80, 255, 238);
+   }
+       /*Only Chiled */
+   .L p:only-child {
+    color: red;
+    }
+       /*First of type */
+p:first-of-type {
+        color: green;
+    }
+
+          /*Last of type */
+p:last-of-type {
+        color: rgb(253, 28, 174);
+    }
+              /*nth-of-type */
+.O p:nth-of-type(2) {
+        color: rgba(106, 255, 0, 0.329);
+    }
+
+                  /*nth-last-of-type */
+p:nth-last-of-type(2) {
+        color: gainsboro;
+    }
+                  /*only of type */
+ p:only-of-type {
+        color: red;
+    }
+
+
+
+
+
+    /*pseudo-class =>target*/
+:target {
+    border: 1px solid coral;
+    }
+
+        /*pseudo-class =>not(selector)*/
+
+input:not([type="submit"]) {
+    background-color: lightgoldenrodyellow;
+    }
+
+        /*Pseudo-class Chain*/
+    .nav:not(:first-child):not(:last-child) {
+        color: darkorchid;
+        }
+       /* pseudo-Element ::first-letter*/
+    .ps p::first-letter {
+        font-size: 40px;
+        color: darkorange;
+        }
+    .po  p::first-line {
+        color: red;
+        }
+
+               /* pseudo-Element ::before*/
+    .GG .required::before {
+       content: "* ";
+       color: rgb(224, 30, 20);
+       }
+               /* pseudo-Element ::after*/
+    .Dv .required::after {
+        content: "* ";
+        color: green;
+       }
+
+                      /* pseudo-Element ::selection*/
+    .WWW  p::selection {
+        color: rgb(255, 0, 187);
+        background-color: lightpink;
+        }
+
+         /* pseudo-Element  Descendant selector*/
+    .Sanny p {
+        color: red;
+        }
+       /*  pseudo-Element  Child Selector*/
+    .SK > p {
+        color:blue;
+        }
+      /*    Adjacent Sibling Selector*/
+    .Con div + p {
+        color: red;
+        }
+        /*  General Sibling Selector*/
+    .body div ~ p {
+        color: goldenrod;
+        }
+
+
+
+        /*==================*/
+
+         /*attribute*/
+
+ [class] {
+    color: rgb(0, 247, 255);
+   }
+  
+   /*attribute="value" */
+   [class="text1"] {
+      color: yellow;
+   }
+  
+   [class|="word"] {
+      color:blue;
+     }
+   
+   [class~="color"] {
+      color: green;
+     }
+  
+  
+     [class^="san"] {
+      color: green;
+     }
+  
+  
+     [class$="Doller"] {
+      color: yellow;
+     }
+  
+  
+     [class*="style"] {
+      color: red;
+     }
+  
+     div,p {
+     color: black;
+     }

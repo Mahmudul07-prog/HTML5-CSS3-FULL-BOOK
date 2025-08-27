@@ -1,0 +1,258 @@
+<!--Topics Covered :
+1 .input and label
+2 . textarea
+3 . select and option,optgroup
+4 . Button
+5.form
+6.Value
+7 .placeholder
+8 .Read only
+9 .Disable
+10 .size
+11 .select multiple
+12 .autofocus
+13 .autocomplete
+14 .min-length
+15.max-length
+16.min-max
+17.required
+18.Styles for The Invalid Inputs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        .fm {
+            background-color: lightblue
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        input:invalid {
+            background-color: rgb(157, 228, 246);
+        }
+
+        input:invalid:required {
+            background-color: rgb(192, 192, 213);
+        }
+
+        input:out-of-range {
+            background-color: rgb(154, 28, 64);
+        }
+    </style>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <h1 style="background-color: darkcyan; color: white; text-align: center; padding: 7px;">Chapter 05</h1>
+    <label for="Product">Product name:</label>
+    <input type="text" id="Product" name="productname" /><br>
+    <br>
+    <select name="Product">
+        <option value="Chips">Chips</option>
+        <option value="Soap">Soap</option>
+        <option value="Bread">Bread</option>
+        <option value="Waterbottle">Water bottle</option>
+    </select>
+    <select name="Product">
+        <optgroup label="Chips">
+            <option value="Potato">Potato</option>
+            <option value="Lays">Lays</option>
+            <option value="Kurkuray">Kurkuray</option>
+        </optgroup>
+        <optgroup label="Drinking Water">
+            <option value="Mum">Mum</option>
+            <option value="Fresh">Fresh</option>
+            <option value="sun">sun</option>
+            <option value="Jibon">Jibon</option>
+        </optgroup>
+    </select>
+    <br>
+    <textarea name="tell us" rows="3" cols="30"> </textarea>
+    <br>
+    <button>Add to Cart</button>
+
+    <br><br><br>
+    <div class="fm">
+        <fieldset>
+            <legend>Trainee Information:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" />
+            <br /><br />
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone" name="emaPhoneil" />
+            <br /><br />
+            <input type="hidden" name="userId" value="123456" />
+            <br /><br />
+            <input type="number" name="course" min="1" max="4" />
+
+            <!--datalist-->
+
+            <datalist id="Course-list">
+                <option value="C#"></option>
+                <option value="GAVE"></option>
+                <option value="NETWORKING"></option>
+                <option value="GRAPHICS DESIGN"></option>
+            </datalist>
+            <input type="text" name="Course" list="Course-list" />
+            <br /><br />
+            <!--checkbox-->
+            <input type="checkbox" id="morning" name="morning" value="morning" />
+            <label for="morning"> I want morning batch</label>
+            <br />
+            <input type="checkbox" id="Evening" name="Evening" value="Evening" />
+            <label for="Evening"> I want Evening batch</label>
+            <br /><br />
+            <!--Radio-->
+            <label for="Course">Popular Course</label>
+            <input type="radio" id="Csharp" name="Csharp" value="Csharp" />
+            <label for="Csharp"> C#</label>
+            <input type="radio" id="Net" name="NETWORKING" value="NETWORKING" />
+            <label for="NETWORKING"> NETWORKING</label>
+
+            <!--range-->
+
+            <br /><br />
+            <label for="rate">Rate us</label>
+            <input type="range" name="points" min="0" max="10" />
+            <br /><br />
+            <!--Password-->
+            <input type="password" name="password" />
+            <br /><br />
+            <!--date Time Local-->
+            <input type="datetime-local" name="alarmDateTime" />
+            <br /><br />
+            <!--Button-->
+            <input type="button" value="Click Here" onclick="alert('Assalamu Alaikum')" />
+            <input type="submit" />
+            <input type="reset" />
+            <br /><br />
+            <!--Choose file-->
+            <label for="img">Image</label>
+            <input type="file" name="bgimage" />
+            <br /><br />
+            <input type="color" name="setcolor" />
+            <!--Image-->
+            <input type="image" src="image/programming-3652497_1280.jpg" alt="Submit" width="150" height="80" />
+
+        </fieldset>
+        <br><br>
+        <div>
+            <form action="/login">
+                <!--value ,min-length ,min-length & autofocus-->
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="firstname" value="Mahmudul" autofocus minlength="3" maxlength="20" />
+                <br><br>
+                <!--placeholder & auto Complete-->
+                <label for="lname">Last name:</label>
+                <input type="text" name="lastname" placeholder="Your last name  here" autocomplete="Hasan" />
+                <br><br>
+                <!--Read only & Disable-->
+                <label for="read">read only:</label>
+                <input type="text" name="fullname" value="Mahmudul Hasan" readonly disabled />
+                <br><br>
+
+                <!-- size -->
+
+                <input type="text" name="firstname" size="8" />
+                <select name="course" size="2">
+                    <option value="cs">cs</option>
+                    <option value="java">java</option>
+                    <option value="gave">gave</option>
+                    <option value="network">network</option>
+                </select>
+                <br><br>
+                <!-- select multiple -->
+                <select name="course" multiple>
+                    <option value="cs">cs</option>
+                    <option value="java">java</option>
+                    <option value="gave">gave</option>
+                    <option value="network">network</option>
+                    <option value="graphics">graphics</option>
+                    <option value="python">python</option>
+                </select>
+                <br><br>
+                <!-- min-max & required -->
+                <label for="CGPA">CGPA</label>
+                <input type="number" name="cgpa" min="2" max="5" required />
+
+
+            </form>
+        </div>
+        <br><br>
+        <div>
+            <form action="/login">
+                <!--value ,min-length ,min-length & autofocus-->
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="firstname" value="Mahmudul" autofocus minlength="3" maxlength="20" />
+                <br><br>
+                <!--placeholder & auto Complete-->
+                <label for="lname">Last name:</label>
+                <input type="text" name="lastname" placeholder="Your last name  here" autocomplete="Hasan" />
+                <br><br>
+                <!--Read only & Disable-->
+                <label for="read">read only:</label>
+                <input type="text" name="fullname" value="Mahmudul Hasan" readonly disabled />
+                <br><br>
+
+                <!-- size -->
+
+                <input type="text" name="firstname" size="8" />
+                <select name="course" size="2">
+                    <option value="cs">cs</option>
+                    <option value="java">java</option>
+                    <option value="gave">gave</option>
+                    <option value="network">network</option>
+                </select>
+                <br><br>
+                <!-- select multiple -->
+                <select name="course" multiple>
+                    <option value="cs">cs</option>
+                    <option value="java">java</option>
+                    <option value="gave">gave</option>
+                    <option value="network">network</option>
+                    <option value="graphics">graphics</option>
+                    <option value="python">python</option>
+                </select>
+                <br><br>
+                <!-- min-max & required -->
+                <label for="CGPA">CGPA</label>
+                <input type="number" name="cgpa" min="2" max="5" required />
+            </form>
+        </div>
+        <br><br>
+        <div>
+            <form action="">
+                <p>This text input is required:</p>
+                <input type="text" name="fname" required />
+
+                <p>caution :This number input must be in the range of 1 - 10:</p>
+                <input type="number" name="quantity" min="1" max="10" />
+
+                <p>caution :This text input must be a three-letter code:</p>
+                <input type="text" name="code" pattern="[A-Za-z]{3}" title="Three letter code." />
+            </form>
+        </div>
+        <div class="nextdiv">
+            <a href="Chapter_6.html">Next</a>
+        </div>
+        <div class="backDiv">
+            <a href="Home_Menu.html">Home</a>
+        </div>
+
+</body>
+
+</html>

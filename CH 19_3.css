@@ -1,0 +1,247 @@
+.gridcontainer {
+    display: grid;background-color: lightgray;
+    grid-template-columns: auto auto auto auto;
+    }
+    .test {
+    border: 2px solid blue;
+    }
+
+
+
+.gridcon {
+    display: grid;
+    background-color: cornflowerblue;
+    grid-template-columns: 40px  60px auto;
+    }
+    .row {
+    border: 2px solid blue;
+    }
+
+
+
+.grid {
+    display: grid;
+    background-color: lightpink;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 30px auto 60px;
+    column-gap: 15px;
+    }
+       
+    .rownum {
+    border: 2px solid blue;
+    }
+
+
+
+.gridgap {
+    display: grid;
+    background-color: gold;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 30px auto 60px;
+    row-gap: 15px;
+    }
+       
+    .gap {
+    border: 2px solid blue;
+    }
+
+
+
+.rowgap {
+    display: grid;
+    background-color: chartreuse;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 30px 60px auto;
+    gap: 15px;
+    }
+    .rowG {
+    border: 2px solid blue;
+    }
+
+
+
+.justify {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        border: 1px solid green;
+        background-color: ivory;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        justify-items: start;
+        }
+        .justfy {
+        border: 2px solid blue;
+        }
+
+
+        
+.outline {
+        display: grid;
+        width: 400px;
+        height: 150px;
+        background-color: linen;
+        border: 1px solid green;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        justify-items: end;
+        }
+           
+        .cell {
+        border: 2px solid blue;
+        }
+
+
+
+.center {
+        display: grid;
+        width: 450px;
+        height: 150px;
+        border: 1px solid green;
+        background-color: lightskyblue;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        justify-items: center;
+        }
+               
+        .cen {
+        border: 2px solid blue;
+        }
+
+
+.aline {
+        display: grid;
+        width: 550px;
+        background-color: lightgray;
+        height: 170px;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        align-items: start;
+        }
+        .sen {
+        border: 2px solid blue;
+        }
+
+
+.alingment {
+        display: grid;
+        width: 550px;
+        height: 170px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        align-items: end;
+        }
+        .placement {
+        border: 2px solid blue;
+        }
+
+
+.alingmentitem {
+        display: grid;
+        width: 550px;
+        background-color: coral;
+        height: 170px;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        align-items: center;
+        }
+        .place {
+        border: 2px solid blue;
+        }
+
+
+
+.justycontent {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: start;
+        }
+        .justycon {
+        border: 2px solid blue;
+        }
+
+
+.justycontentend {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: end;
+        }
+        .justyend {
+        border: 2px solid blue;
+        }
+
+
+.justycontentcenter {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: center;
+        }
+        .justycenter {
+        border: 2px solid blue;
+        }
+
+
+
+.justycontentspace {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: space-between;
+        }
+        .justyspace {
+        border: 2px solid blue;
+        }
+
+
+.justycontentspacearound {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: space-around;
+        }
+        .justyaround {
+        border: 2px solid blue;
+        }
+
+
+.space-even {
+        display: grid;
+        width: 400px;
+        height: 180px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: space-evenly;
+        }
+        .even {
+        border: 2px solid blue;
+        }
+

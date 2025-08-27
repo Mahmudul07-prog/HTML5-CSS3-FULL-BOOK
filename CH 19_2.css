@@ -1,0 +1,423 @@
+#father {
+    border: 1px solid royalblue;
+    width: 400px;
+    height: 150px;
+   }
+   
+  .f {
+    float: left;
+    border: 2px solid greenyellow;
+   }
+   
+  .no-f {
+    border: 1px solid coral;
+  }
+
+
+
+  div {
+    border: 1px solid blue;
+   }
+   
+  .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+   }
+   
+  .child {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+   }
+   
+  .absolute {
+    position: absolute;
+    border: 2px solid greenyellow;
+    text-align: right;
+   }
+   
+  .z-index-minus-two {
+    z-index: -2;
+    left: 100px;
+    top: 5px;
+   }
+   
+  .z-index-minus-one {
+    z-index: -1;
+    left: 60px;
+    top: 35px;
+   }
+   
+  .z-index-zero {
+    z-index: 0;
+    left: 50px;
+    top: 65px;
+   }
+   
+  .z-index-one {
+    z-index: 1;
+   left: 15px;
+   top: 95px;
+   }
+   .z-index-two {
+   z-index: 2;
+   }
+
+
+
+
+   .flex {
+    display: flex;
+    width: 300px;
+    flex-direction: row-reverse;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .item {
+   border: 1px solid blue;
+   }
+
+
+
+   .class {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .serial {
+   border: 1px solid blue;
+   }
+   .cl {
+    display: flex;
+    width: 300px;
+    flex-direction: column-reverse;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .sl {
+   border: 1px solid blue;
+   }
+
+
+   .div {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .number {
+   border: 1px solid blue;
+   }
+
+
+
+   .dv {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .num {
+   border: 1px solid blue;
+   }
+
+
+   .css {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .numb {
+   border: 1px solid blue;
+   }
+
+
+   .main {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .opt {
+   border: 1px solid blue;
+   }
+
+
+   .project {
+    display: flex;
+    width: 300px;
+    align-items: flex-start;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .html {
+   border: 1px solid blue;
+   }
+
+   .pro {
+    display: flex;
+    width: 300px;
+    align-items: flex-end;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .htm {
+   border: 1px solid blue;
+   }
+
+   .proj {
+    display: flex;
+    width: 300px;
+    align-items:center;
+    height: 150px;
+    border: 3px solid green;
+    gap: 15px;
+   }
+   
+  .htmls {
+   border: 1px solid blue;
+   }
+
+
+   .projects {
+    display: flex;
+    align-items: baseline;
+    width: 280px;
+    height: 130px;
+    border: 2px solid blue;
+    gap: 10px;
+    }
+    .htmlss1 {
+    border: 2px solid chocolate;
+    }
+    .htmlss2 {
+    height: 50px;
+    }
+    .htmlss3 {
+    line-height: 65px;
+    }
+
+
+    .dev {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 150px;
+        border: 1px solid blue;
+        gap: 5px;
+        }
+        .cs {
+        border: 1px solid red;
+        flex-basis: 120px;
+        }
+
+
+      .flx {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        width: 250px;
+        height: 140px;
+        border: 2px solid rgb(34, 215, 255);
+        gap: 10px;
+        }
+         
+      .fz{
+        border: 2px solid violet;
+        flex-basis: 120px;
+        }
+
+
+      .center {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 250px;
+        height: 140px;
+        border: 2px solid rgb(34, 215, 255);
+        gap: 10px;
+        }
+           
+      .cen{
+        border: 2px solid violet;
+        flex-basis: 120px;
+        }
+
+
+      .space {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 250px;
+        height: 140px;
+        border: 2px solid rgb(34, 215, 255);
+        gap: 10px;
+        }
+             
+      .spc{
+        border: 2px solid violet;
+        flex-basis: 120px;
+        }
+
+
+      .around {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 270px;
+        height: 160px;
+        border: 2px solid rgb(34, 215, 255);
+        gap: 10px;
+        }
+               
+      .ard{
+        border: 2px solid violet;
+        flex-basis: 120px;
+        }
+
+
+      .evenly {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 250px;
+        height: 140px;
+        border: 2px solid rgb(34, 215, 255);
+        gap: 10px;
+        }
+                 
+      .ev{
+        border: 2px solid violet;
+        flex-basis: 120px;
+        }
+
+
+
+      .itemflex {
+        display: flex;
+        width: 320px;
+        height: 150px;
+        border: 2px solid black;
+        gap: 15px;
+        }
+      .flex {
+        border: 1px solid blue;
+        flex-basis: 100px;
+        }
+
+
+
+    .flex-container {
+      display: flex;
+      width: 400px;
+      height: 150px;
+      border: 1px solid black;
+      gap: 10px;
+      }
+         
+    .flexditem {
+      border: 2px solid blue;
+      flex-basis: 110px;
+      }
+         
+    .con3 {
+      flex-shrink: 3;
+      }
+
+
+
+  .flex-self {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 180px;
+    border: 2px solid black;
+    gap: 10px;
+    }
+       
+  .flexed {
+    border: 2px solid blue;
+    }
+       
+  .X1 {
+    align-self: flex-start;
+    }
+  .X2 {
+    align-self: flex-end;
+      }
+       
+  .X4 {
+    align-self: baseline;
+      }
+  .X5 {
+    align-self: stretch;
+      }
+
+
+
+
+  .divisions {
+    display: flex;
+    width: 450px;
+    height: 180px;
+    border: 1px solid black;
+    gap: 10px;
+    }
+  .flexd {
+    border: 2px solid blue;
+    }
+  .A1 {
+    flex: 2;
+    }
+  .A2 {
+    flex: 1;
+    }
+  .A3 {
+    flex: 1;
+    }
+
+
+
+
+  .menu {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    border: 1px solid black;
+    background-color: rgba(255, 127, 80, 0.718);
+    gap: 15px;
+    }
+     
+  .menui {
+    border: 2px solid blueviolet;
+    }
+     
+  .link_home {
+    margin-right: auto;
+    }
